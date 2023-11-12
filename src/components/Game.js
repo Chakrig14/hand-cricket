@@ -294,10 +294,12 @@ const Game = ({ tossWin }) => {
                     <div>
                         <p>You Won the Match🏆</p>
                     </div>
-                    :
-                    <div>
-                        <p>You lost the match😔</p>
-                    </div>}
+                    : result === "Robot" ?
+                        <div>
+                            <p>You lost the match😔</p>
+                        </div>
+                        :
+                        <div><p>It's a tie</p></div>}
             </div>}
         </section>
     )
