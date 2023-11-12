@@ -1,0 +1,142 @@
+.game-section::before {
+    content: "";
+    position: absolute;
+    background: url("/src/images/gameSreen.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    width: 100dvw;
+    height: 100dvh;
+    z-index: -1;
+}
+
+.game-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+}
+
+.player-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.player-you {
+    background-color: #0a42fb;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Poppins";
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 30%;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Playpen Sans";
+    font-size: 2rem;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.score-bg {
+    border-radius: 50%;
+    background-color: #3f3f3f;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.4rem;
+}
+
+.score-bg span {
+    text-align: center;
+}
+
+.score-main {
+    display: flex;
+}
+
+button {
+    border: none;
+    margin-right: 0.5rem;
+    background-color: #0d8ef7;
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+button:hover {
+    background-color: #075494;
+    transition: background-color 0.5s ease-in;
+}
+
+.score-board {
+    position: fixed;
+    bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.score-board-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score-board-value>div {
+    margin-bottom: 0.5rem;
+}
+
+.score-board-value>p {
+    font-family: "Poppins";
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.score-values {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: #ffffff;
+}
+
+.score-values>p {
+    font-size: 4rem;
+}
+
+.btn-disable {
+    background-color: #717171;
+    color: #010101;
+    cursor: not-allowed;
+}
+
+.result-container {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    top: 0;
+}
+
+.result-container>div>p {
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+}
