@@ -126,7 +126,14 @@ const Game = ({ tossWin }) => {
             setModal(true);
             setInningChange(false);
             timerHomeNavigate();
-        } else {
+        }
+        else if (isPlayerOut && isRobotOut && playerScoreArr.length === 1 && robotScoreArr.length === 1) {
+            setResult("Tie");
+            setModal(true);
+            setInningChange(false);
+            timerHomeNavigate();
+        }
+        else {
             console.log("Game in progress...");
         }
     }
